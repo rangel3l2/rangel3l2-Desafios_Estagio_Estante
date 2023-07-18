@@ -1,0 +1,27 @@
+
+main{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.3em;
+    flex-direction: row;
+    background: rgb(229,228,241);
+    background: linear-gradient(90deg, rgba(229,228,241,1) 0%, rgba(225,230,248,1) 27%, rgba(168,225,250,1) 77%, rgba(0,212,255,1) 93%);
+    justify-content: space-around;    
+    margin-top: 3%;
+    
+}
+.btn-data{
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;    
+    padding: 1%;
+    font-size: 40px;
+    font-weight: 300;
+    border-radius: 12px;
+    -webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+    -moz-box-shadow:    9px 7px 5px rgba(170, 164, 164, 0.77);
+    box-shadow:         9px 7px 5px rgba(50, 50, 50, 0.77);
+    background-color: #fdfafa;
+}

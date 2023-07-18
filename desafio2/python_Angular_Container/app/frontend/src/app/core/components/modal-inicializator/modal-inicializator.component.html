@@ -1,0 +1,28 @@
+<div class="container-modal">
+  <h1 mat-dialog-title>Select an option or continue:</h1>
+  <div mat-dialog-content>
+    <p>How many school do you want?</p>
+    <mat-form-field appearance="fill">
+      <mat-label>quantity school "number"</mat-label>
+      <input type="number" matInput [(ngModel)]="data.quantity" />
+    </mat-form-field>
+
+    <mat-radio-group
+
+    aria-labelledby="example-radio-group-label"
+    class="example-radio-group"
+    [(ngModel)]="data.type">
+    <mat-label color="primary">How many schools do you want?</mat-label>
+    <mat-radio-button  class="example-radio-button" *ngFor="let item of school" [value]="item">
+      {{item}}
+    </mat-radio-button>
+  </mat-radio-group>
+  <div>selected school: {{data.type}}</div>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()" color="primary">No Thanks</button>
+    <button mat-button [mat-dialog-close]="data" cdkFocusInitial>
+      Ok
+    </button>
+  </div>
+</div>

@@ -1,0 +1,62 @@
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.3em;
+    flex-direction: column;
+    background: #24335a
+}
+.btn{
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Align items horizontally */
+    height: 50px; /* Set the height of the button */
+    width: 50px; /* Set the width of the button */
+    background-color: #fdfafa; /* Set the background color of the button */
+    font-size: 17px;
+    font-weight: 400;
+    border: none;
+
+    margin-bottom: 2%;
+}
+.filters-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fdfafa;
+    align-items: center;
+    border-radius: 12px;
+    margin-bottom: 1.5%;
+    cursor: pointer;
+    padding: 0.5%;
+    -webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+    -moz-box-shadow:    9px 7px 5px rgba(170, 164, 164, 0.77);
+    box-shadow:         9px 7px 5px rgba(50, 50, 50, 0.77);
+}
+#circle{
+
+    display: flex;
+    border-radius: 50%;
+    width: 25vh;
+    height: 25vh;
+    align-items: center;
+    justify-content: center;
+    background: rgb(229,228,241);
+    background: linear-gradient(90deg, rgba(229,228,241,1) 11%, rgba(10,49,77,1) 100%, rgba(168,225,250,1) 100%, rgba(0,212,255,1) 100%);
+    cursor: pointer;
+    -webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+    -moz-box-shadow:    9px 7px 5px rgba(170, 164, 164, 0.77);
+    box-shadow:         9px 7px 5px rgba(50, 50, 50, 0.77);
+    transition: all 1s;
+    box-sizing: border-box;
+}
+#circle :hover{
+    transform: scale(1) rotate(15deg);
+}
+#circle span{
+    width: 17vh;
+    height: 17vh;
+    font-size: 30px;
+    display: flex;
+    border-radius: 50%;
+}
